@@ -45,25 +45,10 @@ public class InsertPuzzle extends javax.swing.JFrame {
         l[8][0]=s80;         l[8][1]=s81;         l[8][2]=s82;         l[8][3]=s83;         l[8][4]=s84;         l[8][5]=s85;         l[8][6]=s86;         l[8][7]=s87;         l[8][8]=s88; 
         cl[0][0]=cr0;        cl[0][1]=cr1;        cl[0][2]=cr2;        cl[0][3]=cr3;        cl[0][4]=cr4;        cl[0][5]=cr5;        cl[0][6]=cr6;         cl[0][7]=cr7;         cl[0][8]=cr8; 
         cl[1][0]=cc0;        cl[1][1]=cc1;        cl[1][2]=cc2;        cl[1][3]=cc3;        cl[1][4]=cc4;        cl[1][5]=cc5;        cl[1][6]=cc6;         cl[1][7]=cc7;         cl[1][8]=cc8;
-        
-       /* int grid[][] = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
-                      {5, 2, 0, 0, 0, 0, 0, 0, 0},
-                      {0, 8, 7, 0, 0, 0, 0, 3, 1},
-                      {0, 0, 3, 0, 1, 0, 0, 8, 0},
-                      {9, 0, 0, 8, 6, 3, 0, 0, 5},
-                      {0, 5, 0, 0, 9, 0, 6, 0, 0},
-                      {1, 3, 0, 0, 0, 0, 2, 5, 0},
-                      {0, 0, 0, 0, 0, 0, 0, 7, 4},
-                      {0, 0, 5, 2, 0, 6, 3, 0, 0}};*/
-           
+       
         for(int i=0;i<9;i++)
             for(int j=0;j<9;j++)
             {
-                /*if(grid[i][j]==0)
-                    l[i][j].setText("");
-                else
-                    l[i][j].setText(grid[i][j]+"");*/
-               
                 l[i][j].setText("");
                 final int iSelection =i, jSelection=j;
                 

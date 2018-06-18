@@ -466,7 +466,7 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
         }
         catch(IOException ioe)
         {
-            System.out.println("Exception in solvinfOptionsFrame.setPanels: "+ioe.getMessage());
+            System.out.println("Exception in solvinfOptionsFrame.setPanels: "+ioe.getMessage()+"");
         }
         
     }   

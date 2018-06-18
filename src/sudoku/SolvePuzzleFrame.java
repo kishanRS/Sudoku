@@ -121,7 +121,7 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
         }
         catch(IOException ioe)
         {
-            System.out.println("Exception in solvePuzzleFrame.getProblem(): "+ioe.getMessage());
+            System.out.println("Exception in solvePuzzleFrame.getProblem(): "+ioe.getMessage()+"");
         }
 
     }

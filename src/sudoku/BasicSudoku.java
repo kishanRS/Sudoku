@@ -24,9 +24,7 @@ public class BasicSudoku {
     public static void setOriginalColor(int row, int col,JTextField l)
      {
         if( (row<3 && (col<3 || col>5)) || ((row>=3&&row<=5) &&(col>=3&&col<=5)) || (row>5 && (col<3 || col>5)))
-        {
             l.setBackground(new Color(255,0,153));
-        }
         else
             l.setBackground(new Color(255,0,255));
     }

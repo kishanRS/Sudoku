@@ -18,7 +18,7 @@ public class Solution {
     {
         int row=0,col=0;
         boolean unAssigned=false;
-        for (row = 0; row < 9; row++)
+        for (row =0; row < 9; row++)
         {
             for (col = 0; col < 9; col++)
             {

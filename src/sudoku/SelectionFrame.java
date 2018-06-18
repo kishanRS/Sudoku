@@ -388,7 +388,7 @@ public class SelectionFrame extends javax.swing.JFrame {
     private void easyRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_easyRBActionPerformed
         BasicSudoku.easy=true;
         BasicSudoku.medium=false;
-        BasicSudoku.hard=false;
+        BasicSudoku.hard=false ;
     }//GEN-LAST:event_easyRBActionPerformed
 
     private void mediumRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mediumRBActionPerformed
