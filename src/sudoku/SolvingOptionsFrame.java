@@ -419,20 +419,17 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
                 if(end!=-1)
                 {
                     end=fr.read(rc);
-                    System.out.println("rc: "+rc[0]+" "+rc[82]);
                     if(rc[82]=='U')
                         unsolved.add(i);
                     if(rc[82]=='C')
                     {
                         saved.add(i);
                         end=fr.read(rc);
-                        System.out.println("rc: "+rc[0]+" "+rc[82]);
                     }
                     if(rc[82]=='S')
                     {
                         solved.add(i);
                         end=fr.read(rc);
-                        System.out.println("rc: "+rc[0]+" "+rc[82]);
                     }
                    
                     i++;
@@ -463,15 +460,8 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
             {
                 this.unsolved[j]=(Integer)it.next();
                 j++;
-            }/*
-            for(int k=0;k<this.unsolved.length;k++)
-                System.out.print(this.unsolved[k]+" ");
-            System.out.println("");
-            for(int k=0;k<this.solved.length;k++)
-                System.out.print(this.solved[k]+" ");
-            System.out.println("");
-            for(int k=0;k<this.saved.length;k++)
-                System.out.print(this.saved[k]+" ");*/
+            }
+            
             setPanels();
         }
         catch(IOException ioe)
@@ -514,7 +504,6 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
                 
                 public void mouseClicked(MouseEvent evt)
                 {
-                   System.out.println("pil: "+il);
                     unsolvedClicked(il);
                 }
             });
@@ -531,7 +520,6 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
         sl=new JLabel[saved.length];
         for(int i=0;i<saved.length;i++)
         {
-            //System.out.println("Saved: "+saved[i]);
             sl[i]=new JLabel("Puzzle "+saved[i]);
             sl[i].setPreferredSize(new Dimension(unsolvedP.getWidth(),60));
             sl[i].setOpaque(true);
@@ -550,7 +538,6 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
                 
                 public void mouseClicked(MouseEvent evt)
                 {
-                    System.out.println("sil: "+il);
                     savedClicked(il);
                 }
             });
@@ -585,7 +572,6 @@ public class SolvingOptionsFrame extends javax.swing.JFrame {
                 
                 public void mouseClicked(MouseEvent evt)
                 {
-                    System.out.println("qil: "+il);
                     solvedClicked(il);
                 }
             });

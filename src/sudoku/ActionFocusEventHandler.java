@@ -55,7 +55,7 @@ public class ActionFocusEventHandler extends MouseAdapter implements ActionListe
            try
            {
               val=Integer.parseInt(l.getText());
-               //System.out.println("VAL: "+val);
+               
               if(val<1||val>9)
               {   
                    messageL.setText("Enter Digits between 1-9, TRY AGAIN");

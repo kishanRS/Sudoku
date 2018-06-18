@@ -40,7 +40,6 @@ public class SelectionFrame extends javax.swing.JFrame {
         BasicSudoku.easy=true;
         BasicSudoku.solvePuzzle=true;
         
-        //System.out.println("path: "+Paths.get("").toAbsolutePath().getParent());
         String path=Paths.get("").toAbsolutePath().toString();
      
         File f=new File(path+"/puzzle");
@@ -60,7 +59,7 @@ public class SelectionFrame extends javax.swing.JFrame {
         }
         catch(IOException ioe)
         {
-            System.out.println("Exception in SelectionFrame cotr: "+ioe.getMessage());
+            System.out.println("Exception in SelectionFrame ctor: "+ioe.getMessage());
         }
         
     }

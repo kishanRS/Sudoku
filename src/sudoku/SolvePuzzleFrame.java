@@ -37,7 +37,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
     public SolvePuzzleFrame(int pno, char pType)
     {
         this();
-        System.out.println("ctor: "+pno+" "+pType);
         this.pno=pno;
         this.ptype=pType;
         assign();
@@ -1618,8 +1617,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
         temp.createNewFile();
         FileWriter fw=new FileWriter(temp);
         FileReader fr=new FileReader(f);
-        Scanner sc=new Scanner(System.in);
-        //sc.nextLine();
         int pno=0,end=0;
         do
         {
@@ -1629,7 +1626,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
                 end=fr.read();
                 if(end==-1)
                     break;
-                System.out.println("pno: "+pno);
                 fw.write("\r\n");
                 
             }
@@ -1639,7 +1635,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
                 char buf[]=new char[83];
                 
                 end= fr.read(buf);
-                System.out.println("buf[0]: "+buf[0]+" buf[82]: "+buf[82]);
                 if(ch=='C')
                 {
                     if(buf[82]=='U'&&pno==(this.pno))
@@ -1653,7 +1648,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
                 
                 
                 fw.write(buf);
-                System.out.println("ptype: "+this.ptype+" pno: "+pno+" this.pno: "+this.pno);
                 if(pno==this.pno)
                 {
                    
@@ -1662,7 +1656,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
                 if((this.ptype=='C'||this.ptype=='S')&&pno==this.pno)
                 {
                     end=fr.read(buf);
-                    System.out.println("ntbr buf[0]: "+buf[0]+" buf[82]: "+buf[82]);
                     // fw.write(buf);
                 }
                 else if((buf[82]=='C'||buf[82]=='S')&&pno!=this.pno)
@@ -1673,12 +1666,9 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
             }
                 
         }while(end!=-1);
-        //sc.nextLine();
         fr.close();
         fw.close();
-        //sc.nextLine();
         f.delete();
-        //sc.nextLine();
         f=new File(Paths.get("").toAbsolutePath()+"/puzzle/temp.txt");
         if(BasicSudoku.easy)
             temp=new File(Paths.get("").toAbsolutePath()+"/puzzle/easy.txt");
@@ -1688,7 +1678,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
             temp=new File(Paths.get("").toAbsolutePath()+"/puzzle/hard.txt");
         
         f.renameTo(temp);
-        //sc.nextLine();
     }
     catch(IOException ioe)
     {
@@ -1716,7 +1705,6 @@ public class SolvePuzzleFrame extends javax.swing.JFrame {
         else
             sudo=sudo+" "+this.ptype;
         char c[]=sudo.toCharArray();
-        System.out.println("-> size: "+c.length+" "+c);
         return c;   
     }
     private void messageLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_messageLMouseClicked

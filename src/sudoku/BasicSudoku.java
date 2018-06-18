@@ -71,7 +71,6 @@ public class BasicSudoku {
                         sud[i][j]=num;
                     else
                     {
-                        //System.out.println("ifail: "+i+"jfail: "+j+"num: "+num);
                         BasicSudoku.setMessage(1, messageL,"2 or more same enteries in same row or column or box !!!");
                         verified=false;
                         l[i][j].setBackground(Color.orange);
