@@ -51,9 +51,7 @@ public class InsertPuzzle extends javax.swing.JFrame {
             {
                 l[i][j].setText("");
                 final int iSelection =i, jSelection=j;
-                
                 l[iSelection][jSelection].addActionListener(new ActionFocusEventHandler(iSelection,jSelection,messageL,l[iSelection][jSelection]));
-                
                 l[iSelection][jSelection].addFocusListener(new ActionFocusEventHandler(iSelection,jSelection,messageL,l[iSelection][jSelection]));
                 
                 if(i<2)

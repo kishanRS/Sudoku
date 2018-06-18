@@ -68,7 +68,7 @@ public class ActionFocusEventHandler extends MouseAdapter implements ActionListe
            {
               messageL.setText("Enter only Digits: 1-9, TRY AGAIN");
               l.setText("");
-              l.setBackground(Color.orange);
+              l.setBackground(Color.orange );
            }   
        }  
     }

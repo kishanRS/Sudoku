@@ -19,6 +19,7 @@ public class MouseEventHandler extends MouseAdapter
     JTextField l[][];
     int iSelection, jSelection;
     JLabel messageL;
+    
     public MouseEventHandler( int iSelection, int jSelection, JTextField l[][],JLabel messageL)
     {
         this.l=l;

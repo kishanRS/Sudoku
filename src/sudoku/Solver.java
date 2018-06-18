@@ -1451,7 +1451,7 @@ public class Solver extends javax.swing.JFrame {
                 l[i][j].setText("");
             }
         
-        BasicSudoku.setMessage(0,messageL,"  ");
+        BasicSudoku.setMessage(0,messageL," " );
     }//GEN-LAST:event_clearAllLMouseClicked
 
     private void solveLMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_solveLMouseClicked
